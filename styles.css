@@ -1,3 +1,4 @@
+/*Body de la pagina, fondo negro para ver las estrellas.*/
 body {
     margin: 0;
     overflow: hidden;
@@ -8,6 +9,7 @@ body {
     align-items: center;
     position: relative;
 }
+/*Estilo de las estrellas*/
 .estrella {
     position: absolute;
     width: 4px;
@@ -16,15 +18,16 @@ body {
     border-radius: 50%;
     animation: moverEstrella linear infinite;
 }
+/*animacion mediante keyframes para el movimiento automatico de las estrellas*/
 @keyframes moverEstrella {
     from { transform: translateX(100vw); }
     to { transform: translateX(-100vw); }
 }
+/*estilos de los planetas*/
 .planeta {
     position: absolute;
     width: 40px;
     height: 40px;
-    background: blue;
     border-radius: 50%;
     box-shadow: 0 0 15px rgba(0, 0, 255, 0.8);
 }
