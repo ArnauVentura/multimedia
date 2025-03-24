@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.estrella {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: white;
+    border-radius: 50%;
+    animation: moverEstrella linear infinite;
+}
+@keyframes moverEstrella {
+    from { transform: translateX(100vw); }
+    to { transform: translateX(-100vw); }
+}
+.planeta {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: blue;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(0, 0, 255, 0.8);
+}
